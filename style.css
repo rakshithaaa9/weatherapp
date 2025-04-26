@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222 ;
+}
+.card{
+    width: 450px;
+    background: linear-gradient(135deg, rgb(235, 199, 199), #635c95);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    color: black;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1.2em;
+}
+.search button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+.weather-icon{
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 150px;
+}
+.weather h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+}
+.weather h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.details .col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.details .col img{
+    width: 60px;
+    margin-right: 10px;
+}
+.details .col p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.humidity, .wind{
+    font-size: 1.4em;
+    margin-top: -6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.weather {
+    display: none;
+}
+@media screen and (max-width:500px){
+    .card{
+        width: 350px;
+        padding: 30px 25px;
+    }   
+    .search{
+        width: 90%;
+    }     
+    .search input{
+        height: 45px;
+        padding: 12px;
+    }
+    .search button{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        border-radius: 50%;
+    }    
+    .weather-icon{
+        margin-top: 30px;
+        border-radius: 10px;
+        width: 100px;
+    }
+    .weather h1{
+        font-size: 1em;
+    }
+    .weather h2{
+        font-size: 1em;
+    }
+    .details{
+        margin-top: 20px;
+    }
+    .details .col img{
+        width: 40px;
+        margin-right: 8px;
+    }
+    .humidity, .wind{
+        font-size: 1em;
+        margin-top: -3px;
+    }
+}
